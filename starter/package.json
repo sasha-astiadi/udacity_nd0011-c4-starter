@@ -1,0 +1,22 @@
+{
+  "name": "study-night",
+  "version": "1.0.0",
+  "description": "Study Night - a flashcard study application, optimized and tested with Mocha, Cypress, Gulp, and Parcel.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "chai": "^6.3.0",
+    "cypress": "^15.21.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.13.0",
+    "gulp": "^5.0.1",
+    "gulp-cli": "^3.1.0",
+    "gulp-shell": "^0.8.0",
+    "mocha": "^12.0.3",
+    "parcel": "^2.16.4",
+    "prettier": "^3.9.9"
+  }
+}
