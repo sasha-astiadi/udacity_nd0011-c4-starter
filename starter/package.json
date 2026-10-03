@@ -5,6 +5,11 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "start": "parcel index.html",
+    "test": "mocha test/",
+    "cypress": "cypress run",
+    "cypress:open": "cypress open",
+    "e2e": "gulp e2e",
     "gulp": "gulp"
   },
   "devDependencies": {
