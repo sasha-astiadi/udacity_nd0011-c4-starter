@@ -10,6 +10,7 @@ const showError = (message) => {
     error.textContent = message;
     error.style.color = "red";
     error.className = "error";
+    error.setAttribute("data-cy", "form_error");
     form.appendChild(error);
   } else if (existingError.textContent !== message) {
     existingError.textContent = message;

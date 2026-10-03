@@ -30,8 +30,10 @@ const renderSide = (text, className) => {
 const generateFlashCard = (card) => {
   // Creates the Term side
   const termSide = renderSide(card.term, "term");
+  termSide.setAttribute("data-cy", "card_term");
   // Creates the description side
   const descriptionSide = renderSide(card.description, "description");
+  descriptionSide.setAttribute("data-cy", "card_description");
 
   // Creates an inner card that will help with the Flash Card animation
   const innerCard = document.createElement("div");

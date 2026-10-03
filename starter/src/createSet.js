@@ -27,7 +27,9 @@ const createSetForm = (setCards) => {
   const label = createLabel("Card Set Title", "titleInput");
   // Creates the input fot the title
   const input = createInput("titleInput");
+  input.setAttribute("data-cy", "titleInput");
   const submitButton = createSubmitButton("Submit Set");
+  submitButton.setAttribute("data-cy", "set_submit");
 
   // Adds an event listener to the form.
   // On submission, a new study set will be created.

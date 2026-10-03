@@ -29,14 +29,17 @@ const renderCardForm = (set) => {
   const termLabel = createLabel("Term", "termInput");
   // Creates input for the term
   const termInput = createInput("termInput");
+  termInput.setAttribute("data-cy", "termInput");
 
   // Creates label for description
   const descriptionLabel = createLabel("Description", "descriptionInput");
   // Creates input for description
   const descriptionInput = createInput("descriptionInput");
+  descriptionInput.setAttribute("data-cy", "descriptionInput");
 
   //Creates submit input
   const addCardBtn = createSubmitButton("Add Card");
+  addCardBtn.setAttribute("data-cy", "card_submit");
   // Handle form submission ane errors
   cardForm.addEventListener("submit", (e) => {
     // Prevents forms default behavior

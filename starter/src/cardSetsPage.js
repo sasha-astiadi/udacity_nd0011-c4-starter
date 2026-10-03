@@ -85,6 +85,7 @@ const createCardSets = () => {
   // Creates a container for the sets
   const setContainer = document.createElement("ul");
   setContainer.className = "setContainer";
+  setContainer.setAttribute("data-cy", "set_container");
   // Iterates though the sets and creates their dom elements dynamically
   cardSets.forEach((set) => createSetPreviewCard(set, setContainer));
   return setContainer;
